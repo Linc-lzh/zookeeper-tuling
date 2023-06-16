@@ -10,7 +10,7 @@ import org.apache.zookeeper.data.Stat;
  */
 public class CuratorDemo {
 
-    private final static  String CLUSTER_CONNECT_STR="192.168.65.156:2181,192.168.65.190:2182,192.168.65.200:2183";
+    private final static  String CLUSTER_CONNECT_STR="192.168.1.150:2181,192.168.1.90:2182,192.168.1.91:2183";
 
     public static void main(String[] args) throws Exception {
         //构建客户端实例
