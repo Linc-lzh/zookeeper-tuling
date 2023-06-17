@@ -75,7 +75,7 @@ public class DistributedQueueDemo {
     }
 
     public static void main(String[] args) throws Exception {
-        DistributedQueueDemo queue = new DistributedQueueDemo("192.168.65.204:2181");
+        DistributedQueueDemo queue = new DistributedQueueDemo("192.168.1.150:2181");
 
         // 生产者线程
         new Thread(() -> {

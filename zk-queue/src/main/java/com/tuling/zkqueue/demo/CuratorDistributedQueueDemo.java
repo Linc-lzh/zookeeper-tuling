@@ -10,7 +10,7 @@ public class CuratorDistributedQueueDemo {
     private static final String QUEUE_ROOT = "/curator_distributed_queue";
 
     public static void main(String[] args) throws Exception {
-        CuratorFramework client = CuratorFrameworkFactory.newClient("192.168.65.204:2181",
+        CuratorFramework client = CuratorFrameworkFactory.newClient("192.168.1.150:2181",
                 new ExponentialBackoffRetry(1000, 3));
         client.start();
 

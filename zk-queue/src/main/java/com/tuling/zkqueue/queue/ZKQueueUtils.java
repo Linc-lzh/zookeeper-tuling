@@ -15,7 +15,7 @@ public class ZKQueueUtils {
 
     static{
         // 初始化连接
-        client = CuratorFrameworkFactory.builder().connectString("192.168.65.204:2181")
+        client = CuratorFrameworkFactory.builder().connectString("192.168.1.150:2181")
                 .retryPolicy(new ExponentialBackoffRetry(100,1)).build();
         client.start();
         //创建队列
